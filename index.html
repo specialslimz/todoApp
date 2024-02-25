@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container">
+      <p class="alert"></p>
+      <header class="todo-head">
+        <h1>Todo-list</h1>
+
+        <figure>
+          <img
+            class="todo-head-img"
+            src="./image/edit_note_black_36dp.svg"
+            alt=""
+          />
+        </figure>
+      </header>
+      <!-- Todo Input -->
+      <form class="todo-form">
+        <input
+          type="text"
+          id="newTaskInput"
+          placeholder="Add a task..."
+          autocomplete="off"
+        />
+        <button type="submit" class="btn-add">Add</button>
+      </form>
+      <!-- Task List -->
+      <ul id="todo-list" class="task-list">
+        <li class="todo-list">
+          <!-- <p class="todo">Add list</p>
+          <input class="todo" type="text " value="Addlist" disabled />
+
+          <div>
+            <span class="material-symbols-outlined edit"> edit </span>
+            <span class="material-symbols-outlined delete"> delete </span>
+          </div> -->
+        </li>
+      </ul>
+      <button class="btn-clear d-none">Clear All</button>
+    </section>
+  </body>
+</html>

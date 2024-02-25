@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style: none;
+  background: none;
+  outline-style: none;
+  text-decoration: none;
+}
+html {
+  font-family: Montserrat;
+}
+body {
+  font-family: Montserrat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(58, 74, 74);
+}
+.container {
+  background-color: white;
+  border-radius: 0.3rem;
+  padding: 2rem;
+  text-align: center;
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+.todo-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.8rem;
+}
+.todo-head-img {
+  margin-left: 0.5rem;
+  width: 3rem;
+}
+.todo-form {
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+  font-family: Montserrat;
+  margin-bottom: 0.8rem;
+}
+.todo-form input {
+  width: 20rem;
+  padding: 0.4rem;
+  font-family: Montserrat;
+  font-size: 1rem;
+}
+.btn-add {
+  font-family: Montserrat;
+  font-weight: 500;
+  width: 5rem;
+  cursor: pointer;
+  background-color: rgb(58, 74, 74);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+.btn-add:hover {
+  opacity: 0.6;
+}
+
+.todo {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 1rem;
+  font-family: Montserrat;
+  width: 80%;
+}
+.separate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: aliceblue;
+  border-radius: 0.2rem;
+  margin-bottom: 0.8rem;
+}
+/* .separate {
+  display: flex;
+  justify-content: space-between;
+} */
+.edit,
+.delete {
+  cursor: pointer;
+}
+
+.delete:hover {
+  transform: translateY(-2px);
+}
+
+.edit:hover {
+  transform: translateY(-2px);
+}
+
+.btn-clear {
+  cursor: pointer;
+  width: 10rem;
+  background-color: rgb(199, 50, 50);
+  color: white;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px;
+  font-family: Montserrat;
+}
+.btn-clear:hover {
+  background-color: rgb(153, 34, 34);
+  transform: translateY(-2px);
+}
+.alert-success {
+  background-color: rgb(193, 215, 171);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+}
+.alert-error {
+  background-color: rgb(204, 146, 146);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.d-none {
+  display: none;
+}
+
+.v-none {
+  visibility: hidden;
+}
+@media screen and (max-width: 767px) {
+  .todo-form input {
+    width: 100%;
+  }
+
+  .todo {
+    width: 85%;
+  }
+  .btn-add {
+    padding: 0.8rem;
+  }
+  .alert-success,
+  .alert-error {
+    padding: 0.2rem;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .todo {
+    width: 80%;
+  }
+}
